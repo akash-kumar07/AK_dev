@@ -28,7 +28,6 @@ function App() {
         <Navbar scrolled={scrolled} />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        {/* <div style={{ height: "200vh" }}></div> */}
         <Switch>
           <Route path="/aboutUs"></Route>
           <Route path="/events"></Route>
@@ -38,6 +37,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <div style={{ height: "200vh" }}></div>
       </div>
     </Router>
   );

@@ -10,7 +10,6 @@
 .background {
   width: 100%;
   height: 100%;
-  background: #eceef64f;
   position: absolute;
   top: 0;
   left: 0;
@@ -70,4 +69,79 @@
 
 .image img {
   width: 100%;
+}
+
+.aboutUs {
+  width: 100%;
+  text-align: center;
+  padding: 66px 180px;
+}
+
+.aboutUs h2 {
+  background: linear-gradient(to right, #233297, #ed1c24);
+  display: block;
+  margin: auto;
+  width: 115px;
+  text-transform: capitalize;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutUs p {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.aboutUs_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  padding: 30px 15px;
+  border-radius: 3px;
+  background: #f9fafc;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.rating {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rating span {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #ed1c24;
+}
+
+.rating img {
+  width: 100px;
+  margin-top: -5px;
+}
+
+.card h3 {
+  background: linear-gradient(to right, #233297, #ed1c24);
+  display: block;
+  margin: auto;
+  width: 115px;
+  text-transform: capitalize;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 12px;
 }
