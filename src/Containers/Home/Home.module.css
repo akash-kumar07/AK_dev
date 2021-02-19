@@ -18,7 +18,7 @@
 
 .background::after {
   content: "";
-  clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 83%);
   position: absolute;
   top: 0;
   left: 0;
@@ -98,6 +98,7 @@
 .aboutUs_cards {
   display: flex;
   justify-content: space-between;
+  margin: 20px;
 }
 
 .card {
@@ -106,6 +107,7 @@
   border-radius: 3px;
   background: #f9fafc;
   transition: all 0.2s;
+  cursor: default;
 }
 
 .card:hover {
