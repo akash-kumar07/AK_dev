@@ -22,7 +22,7 @@ export default function () {
         "AKI is committed to the highest ethical standards. Our products and services are of the highest quality. Our business practices and processes are designed to achieve quality results that exceed the expectations of patients, physicians, customers, business partners and regulators. Quality is ingrained in the work of our colleagues and all our values. We have a relentless passion for quality in everything we do.",
     },
   ];
-
+//mm
   return (
     <>
       <div className={classes.head}>
