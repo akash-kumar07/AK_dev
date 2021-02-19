@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import BlogHeader from './BlogHeader'
 import BlogSectionOne from './BlogSectionOne'
 import CardSection from './CardSection'
@@ -8,8 +9,14 @@ function Blogs(props) {
         <>
              <div className={style.blog}>
                 <BlogHeader/>
-                <BlogSectionOne/>
-                <CardSection/>
+                <Switch>
+                 <Route path="/blogs">
+                   <BlogSectionOne/>
+                   <CardSection/>
+                 </Route>
+                 {/* <Route path="/">
+                 </Route> */}
+                </Switch>
              </div>
         </>
     );
