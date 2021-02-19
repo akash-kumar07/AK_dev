@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles, Card } from "@material-ui/core";
 
 import * as classes from "./Home.module.css";
 import HeadImage from "../../Assets/head.png";

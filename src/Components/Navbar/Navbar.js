@@ -23,6 +23,11 @@ export default function ({ scrolled }) {
               </Link>
             </li>
             <li>
+              <Link className={classes.link} to="/blogs">
+               Blogs
+              </Link>
+            </li>
+            <li>
               <Link className={classes.link} to="/aboutUs">
                 about us
               </Link>
