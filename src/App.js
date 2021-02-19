@@ -8,14 +8,15 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Containers/Home/Home";
 import Blogs from "./Containers/Blog/index";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
   const listenScrollEvent = (event) => {
-    if (window.scrollY < 101) {
+    if (window.scrollY < 71) {
       return setScrolled(true);
-    } else if (window.scrollY > 100) {
+    } else if (window.scrollY > 70) {
       return setScrolled(false);
     }
   };
@@ -43,7 +44,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
-          <div style={{ height: "200vh" }}></div>
+          <Footer />
         </div>
       </Router>
     </>

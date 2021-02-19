@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  height: 80px;
   padding: 14px 180px;
   background: transparent;
   position: fixed;
@@ -14,7 +13,12 @@
 .scrolled {
   background: #fff;
   color: rgb(19, 19, 19);
-  box-shadow: 0 1px 5px rgba(112, 104, 104, 0.2);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.addBackground {
+  background: #fff;
+  color: rgb(19, 19, 19);
 }
 
 nav {

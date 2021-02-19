@@ -3,6 +3,15 @@ import React from "react";
 import * as classes from "./Home.module.css";
 import HeadImage from "../../Assets/head.png";
 import Rating from "../../Assets/stars.svg";
+import Aestheticon from "../../Assets/brands/Aestheticon.svg";
+import Ascenur from "../../Assets/brands/ASCENUR.svg";
+import Beatryx from "../../Assets/brands/Beatryx.svg";
+import Ceovia from "../../Assets/brands/CEOVIA.svg";
+import Eikonha from "../../Assets/brands/Eikonha.svg";
+import Lapromed from "../../Assets/brands/Lapromed.svg";
+import Prizmah from "../../Assets/brands/PRIZMAH.png";
+import Relixin from "../../Assets/brands/RELIXIN.svg";
+import Skinin from "../../Assets/brands/Skinin.svg";
 
 export default function () {
   const cardsData = [
@@ -36,7 +45,7 @@ export default function () {
         </div>
       </div>
       <div className={classes.aboutUs}>
-        <h2>about us</h2>
+        <h2 className={classes.gradientHeading}>about us</h2>
         <p>
           AK International LLC (AKI) is the leading provider of pharmaceutical,
           aesthetic, skin care products, surgical, medical and beauty equipment
@@ -62,6 +71,42 @@ export default function () {
               <p>{data.desc}</p>
             </div>
           ))}
+        </div>
+      </div>
+      <div className={classes.featuredBrands}>
+        <div>
+          <h2 className={classes.gradientHeading}>our featured brands</h2>
+          <div>
+            <div>
+              <img src={Eikonha} alt="Eikonha" />
+            </div>
+
+            <div>
+              <img src={Ascenur} alt="Eikonha" />
+            </div>
+
+            <div>
+              <img src={Lapromed} alt="Eikonha" />
+            </div>
+            <div>
+              <img src={Skinin} alt="Eikonha" />
+            </div>
+            <div>
+              <img src={Prizmah} alt="Eikonha" />
+            </div>
+            <div>
+              <img src={Relixin} alt="Eikonha" />
+            </div>
+            <div>
+              <img src={Beatryx} alt="Eikonha" />
+            </div>
+            <div>
+              <img src={Aestheticon} alt="Eikonha" />
+            </div>
+            <div>
+              <img src={Ceovia} alt="Eikonha" />
+            </div>
+          </div>
         </div>
       </div>
     </>
