@@ -58,6 +58,7 @@ footer > p {
 .left li {
   font-weight: 300;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .link {
