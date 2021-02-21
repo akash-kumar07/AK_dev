@@ -1,17 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import * as classes from "./Navbar.module.css";
 import Logo from "../../Assets/logo.png";
 
 export default function ({ scrolled }) {
+  const current = useLocation().pathname === "/";
+
   return (
     <>
       <header
         className={
-          scrolled
-            ? classes.header
-            : [classes.header, classes.scrolled].join(" ")
+          current
+            ? scrolled
+              ? classes.header
+              : [classes.header, classes.scrolled].join(" ")
+            : scrolled
+            ? [classes.header, classes.addBackground].join(" ")
+            : [classes.header, classes.addBackground, classes.scrolled].join(
+                " "
+              )
         }
       >
         <nav>
@@ -20,11 +28,6 @@ export default function ({ scrolled }) {
             <li>
               <Link className={classes.link} to="/">
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link className={classes.link} to="/blogs">
-               Blogs
               </Link>
             </li>
             <li>

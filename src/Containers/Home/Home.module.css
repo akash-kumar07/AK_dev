@@ -18,7 +18,7 @@
 
 .background::after {
   content: "";
-  clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 83%);
   position: absolute;
   top: 0;
   left: 0;
@@ -78,10 +78,13 @@
 }
 
 .aboutUs h2 {
+  width: 115px;
+}
+
+.gradientHeading {
   background: linear-gradient(to right, #233297, #ed1c24);
   display: block;
   margin: auto;
-  width: 115px;
   text-transform: capitalize;
   background-clip: text;
   -webkit-background-clip: text;
@@ -98,6 +101,7 @@
 .aboutUs_cards {
   display: flex;
   justify-content: space-between;
+  margin: 20px;
 }
 
 .card {
@@ -106,11 +110,12 @@
   border-radius: 3px;
   background: #f9fafc;
   transition: all 0.2s;
+  cursor: default;
 }
 
 .card:hover {
   background: #fff;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .rating {
@@ -144,4 +149,51 @@
 
 .card p {
   font-size: 12px;
+}
+
+.featuredBrands {
+  padding: 0 180px;
+  width: 100%;
+}
+
+.featuredBrands > div {
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 50px;
+  border-radius: 3px;
+}
+
+.featuredBrands h2 {
+  width: 260px;
+}
+
+.featuredBrands h2 ~ div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.featuredBrands h2 ~ div div {
+  width: 250px;
+  height: 180px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+}
+
+.featuredBrands h2 ~ div div:hover {
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.featuredBrands h2 ~ div div img {
+  width: 100%;
 }

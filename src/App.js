@@ -1,6 +1,5 @@
-
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -8,15 +7,16 @@ import "./App.css";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Containers/Home/Home";
-import Blogs from './Container/Blog/index'
+import Blogs from "./Containers/Blog/index";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
   const listenScrollEvent = (event) => {
-    if (window.scrollY < 101) {
+    if (window.scrollY < 71) {
       return setScrolled(true);
-    } else if (window.scrollY > 100) {
+    } else if (window.scrollY > 70) {
       return setScrolled(false);
     }
   };
@@ -28,26 +28,26 @@ function App() {
   }, []);
 
   return (
-<>
-    <Router>
-      <div>
-        <Navbar scrolled={scrolled} />
-        {/* A <Switch> looks through its children <Route>s and
+    <>
+      <Router>
+        <div>
+          <Navbar scrolled={scrolled} />
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/aboutUs"></Route>
-          <Route path="/blogs" component={Blogs}></Route>
-          <Route path="/events"></Route>
-          <Route path="/media"></Route>
-          <Route path="/contactUs"></Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-        <div style={{ height: "200vh" }}></div>
-      </div>
-    </Router>
-</>
+          <Switch>
+            <Route path="/aboutUs"></Route>
+            <Route path="/blogs" component={Blogs}></Route>
+            <Route path="/events"></Route>
+            <Route path="/media"></Route>
+            <Route path="/contactUs"></Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
+    </>
   );
 }
 
