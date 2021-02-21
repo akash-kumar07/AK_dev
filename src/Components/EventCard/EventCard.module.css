@@ -1,0 +1,123 @@
+.card {
+  width: 100%;
+  padding: 30px 20px;
+  max-width: 650px;
+  background: #fff;
+  margin: auto;
+  border-radius: 3px;
+  cursor: default;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+  max-width: 260px;
+}
+
+.title p:first-child {
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.title p:last-child {
+  font-size: 10px;
+  padding: 5px;
+  font-weight: 300;
+  color: #828282;
+  border: 0.1px solid #828282b9;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 62px;
+  height: 2px;
+  background: #233297;
+}
+
+.title:hover p:first-child {
+  color: #233297;
+  font-weight: 600;
+}
+
+.title:hover p:last-child {
+  color: #fff;
+  background: #233297;
+  border-color: #233297;
+}
+
+.description {
+  color: #828282;
+  font-weight: 300;
+  font-size: 13px;
+  padding: 40px 20px 40px 0;
+}
+
+.other {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.writer {
+  display: flex;
+  align-items: center;
+}
+
+.writer img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.writer p {
+  font-size: 12px;
+  align-self: flex-end;
+  text-transform: capitalize;
+}
+
+.additional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.additional div svg {
+  margin-right: 5px;
+  font-weight: 300;
+  fill: #cacaca;
+}
+
+.additional div p {
+  font-size: 12px;
+  color: #3e3e3e;
+}

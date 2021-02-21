@@ -1,0 +1,30 @@
+.bar {
+  width: 100%;
+  padding: 15px 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background);
+}
+
+.bar p:first-child {
+  font-size: 18px;
+}
+
+.bar p:last-child {
+  display: flex;
+  align-items: center;
+  color: #828282;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.bar p:last-child span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #828282;
+  margin: 0 10px;
+}
