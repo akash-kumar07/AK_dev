@@ -1,6 +1,8 @@
 import React from "react";
 
 import * as classes from "./Home.module.css";
+import Carousel from "../../Components/Carousel/Carousel";
+
 import HeadImage from "../../Assets/head.png";
 import Rating from "../../Assets/stars.svg";
 import Aestheticon from "../../Assets/brands/Aestheticon.svg";
@@ -60,8 +62,8 @@ export default function () {
           professionals in the Middle East and South East Asia.
         </p>
         <div className={classes.aboutUs_cards}>
-          {cardsData.map((data) => (
-            <div className={classes.card}>
+          {cardsData.map((data, index) => (
+            <div key={index} className={classes.card}>
               <div className={classes.rating}>
                 <span></span>
                 <img src={Rating} alt="rating" />
@@ -82,31 +84,39 @@ export default function () {
             </div>
 
             <div>
-              <img src={Ascenur} alt="Eikonha" />
+              <img src={Ascenur} alt="Ascenur" />
             </div>
 
             <div>
-              <img src={Lapromed} alt="Eikonha" />
+              <img src={Lapromed} alt="Lapromed" />
             </div>
             <div>
-              <img src={Skinin} alt="Eikonha" />
+              <img src={Skinin} alt="Skinin" />
             </div>
             <div>
-              <img src={Prizmah} alt="Eikonha" />
+              <img src={Prizmah} alt="Prizmah" />
             </div>
             <div>
-              <img src={Relixin} alt="Eikonha" />
+              <img src={Relixin} alt="Relixin" />
             </div>
             <div>
-              <img src={Beatryx} alt="Eikonha" />
+              <img src={Beatryx} alt="Beatryx" />
             </div>
             <div>
-              <img src={Aestheticon} alt="Eikonha" />
+              <img src={Aestheticon} alt="Aestheticon" />
             </div>
             <div>
-              <img src={Ceovia} alt="Eikonha" />
+              <img src={Ceovia} alt="Ceovia" />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className={classes.stories}>
+        <h2 className={classes.gradientHeading}>our stories</h2>
+        <div className={classes.carousel}>
+          <div className={classes.box}></div>
+          <Carousel />
         </div>
       </div>
     </>

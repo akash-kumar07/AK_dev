@@ -197,3 +197,30 @@
 .featuredBrands h2 ~ div div img {
   width: 100%;
 }
+
+.stories {
+  padding: 60px 180px;
+}
+
+.stories h2 {
+  text-align: center;
+  width: 140px;
+}
+
+.carousel {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+  margin-top: 30px;
+}
+
+.box {
+  width: 70%;
+  height: 100%;
+  border: 2px solid #233297;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
