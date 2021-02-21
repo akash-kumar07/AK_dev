@@ -1,0 +1,28 @@
+.gradientHeading {
+  background: linear-gradient(to right, #233297, #ed1c24);
+  display: block;
+  margin: auto;
+  text-transform: capitalize;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner {
+  width: 100%;
+  background: #fff;
+  padding: 30px 180px;
+}
+
+.banner p:first-child {
+  width: 186px;
+}
+
+.banner p:last-child {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  width: 284px;
+  margin-top: 20px;
+}

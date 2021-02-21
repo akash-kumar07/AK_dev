@@ -1,3 +1,7 @@
+/* :root {
+  --background: #f7f7f7;
+} */
+
 .head {
   width: 100%;
   position: relative;
@@ -14,6 +18,7 @@
   top: 0;
   left: 0;
   z-index: -2;
+  background: var(--background);
 }
 
 .background::after {
@@ -75,6 +80,7 @@
   width: 100%;
   text-align: center;
   padding: 66px 180px;
+  background: var(--background);
 }
 
 .aboutUs h2 {
@@ -154,6 +160,7 @@
 .featuredBrands {
   padding: 0 180px;
   width: 100%;
+  background: var(--background);
 }
 
 .featuredBrands > div {
@@ -200,6 +207,7 @@
 
 .stories {
   padding: 60px 180px;
+  background: var(--background);
 }
 
 .stories h2 {

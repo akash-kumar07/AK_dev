@@ -8,6 +8,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Containers/Home/Home";
 import Blogs from "./Containers/Blog/index";
+import Events from "./Containers/Events/Events";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
@@ -36,8 +37,12 @@ function App() {
             renders the first one that matches the current URL. */}
           <Switch>
             <Route path="/aboutUs"></Route>
-            <Route path="/blogs" component={Blogs}></Route>
-            <Route path="/events"></Route>
+            <Route path="/blogs">
+              <Blogs />
+            </Route>
+            <Route path="/events">
+              <Events />
+            </Route>
             <Route path="/media"></Route>
             <Route path="/contactUs"></Route>
             <Route path="/">
