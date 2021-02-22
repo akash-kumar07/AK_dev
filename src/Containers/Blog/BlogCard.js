@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import style from './Blog.module.css'
-import {CounterContext} from './index'
-
+// import {CounterContext} from './index'
+import  cardImg from '../../Assets/head.png'
 
 import {
   BrowserRouter as Router,
@@ -14,11 +14,16 @@ import {
   useParams,
   useRouteMatch
 } from "react-router-dom";
-export default function CustomCard({data,setdSelecteddata}) {
+export default function ({data,relatedFlag}) {
   let { path, url } = useRouteMatch();
+ 
+
   return (
     <>
-     <Link className={style.card} onClick={()=>setdSelecteddata(data)}  to={`${url}/${data.label}`}>  
+     <Link className={style.blog_card}   to={relatedFlag?`${data.label}`:`${url}/${data.label}`}>  
+      <div className={style.blog_cardImg}>
+        <img  src={cardImg}/>
+      </div>
       <div className={style.card_label}>{data.label}</div>
       <div className={style.card_title}>{data.title}</div>
       <div className={style.card_bottomLabel}>
