@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Containers/Home/Home";
 import Blogs from "./Containers/Blog/index";
 import Events from "./Containers/Events/Events";
+import ContactUs from "./Containers/ContactUs/ContactUs";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
@@ -44,7 +45,9 @@ function App() {
               <Events />
             </Route>
             <Route path="/media"></Route>
-            <Route path="/contactUs"></Route>
+            <Route path="/contactUs">
+              <ContactUs />
+            </Route>
             <Route path="/">
               <Home />
             </Route>

@@ -1,0 +1,38 @@
+.contactDetails {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 180px;
+}
+
+.contactDetails div {
+  width: 215px;
+  padding: 15px 10px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.contactDetails div:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contactDetails div img {
+  width: 24px;
+  display: block;
+  margin: auto;
+}
+
+.contactDetails div p {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.contactDetails div p:last-child {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: none;
+}
