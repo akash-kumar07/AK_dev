@@ -34,8 +34,7 @@ function App() {
       <Router>
         <div>
           <Navbar scrolled={scrolled} />
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+          
           <Switch>
             <Route path="/aboutUs"></Route>
             <Route path="/blogs">
