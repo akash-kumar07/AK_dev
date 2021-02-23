@@ -1,8 +1,8 @@
-import React, { useState, useEffect,useContext } from "react";
-import BlogCard from './BlogCard'
-import style from './Blog.module.css'
-import { makeStyles } from '@material-ui/core/styles';
-import Pagination from '@material-ui/lab/Pagination';
+import React, { useState, useEffect, useContext } from "react";
+import BlogCard from "./BlogCard";
+import style from "./Blog.module.css";
+import { makeStyles } from "@material-ui/core/styles";
+import Pagination from "@material-ui/lab/Pagination";
 // import {CounterContext} from './index'
 
 import data from "./blogsData.json";
@@ -27,11 +27,11 @@ function CardSection(props) {
   const [pageNo, setPageNo] = useState(1);
   const [currentData, setCurrentData] = useState([]);
 
-  const count = Math.ceil(data.length / 5);
+  const count = Math.ceil(data.length / 6);
 
   useEffect(() => {
-    const start = 5 * (pageNo - 1);
-    const end = start + 5;
+    const start = 6 * (pageNo - 1);
+    const end = start + 6;
     setCurrentData(data.slice(start, end));
   }, [pageNo]);
 
@@ -39,20 +39,18 @@ function CardSection(props) {
     setPageNo(page);
   };
 
-
-
- 
-    return (
-        <div className={style.blog_cardSection_Main}>
-          <div className={style.blog_cardSection}>
-            {currentData.map((data)=><BlogCard data={data} />)
-            }
-            </div>
-            <div className={styles().root}>
-              <Pagination count={count} onChange={onChange} page={pageNo} />
-            </div>
-        </div>
-    );
+  return (
+    <div className={style.blog_cardSection_Main}>
+      <div className={style.blog_cardSection}>
+        {currentData.map((data) => (
+          <BlogCard data={data} />
+        ))}
+      </div>
+      <div className={styles().root}>
+        <Pagination count={count} onChange={onChange} page={pageNo} />
+      </div>
+    </div>
+  );
 }
 
 export default CardSection;
