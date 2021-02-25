@@ -27,41 +27,24 @@ function Blogs(props) {
 
     let { path, url } = useRouteMatch();
     console.log('path', path)
-    return ( <
-        > { /* <CounterContext.Provider value={[data,selectedData,setdSelecteddata]}> */ } <
-        NavPlaceholder / >
-        <
-        div className = { style.blog } >
-        <
-        Switch >
-        <
-        Route exact path = "/blogs" >
-        <
-        RouteBar title = "Blogs"
+    return ( <> <NavPlaceholder />
+        <div className = { style.blog } >
+        <Switch >
+        <Route exact path = "/blogs" >
+        <RouteBar title = "Blogs"
+             routeArr = {
+            ["Home", "Blogs"] }
+        /> <Banner company = "AK International Events"
+        desc = "All Events are updated daily" />
+        <CardSection />
+        </Route> <Route path = { `${path}/:blogName` } >
+        <RouteBar title = "Blogs"
         routeArr = {
             ["Home", "Blogs"] }
-        /> <
-        Banner company = "AK International Events"
-        desc = "All Events are updated daily" /
-        >
-        <
-        CardSection / >
-        <
-        /Route> <
-        Route path = { `${path}/:blogName` } >
-        <
-        RouteBar title = "Blogs"
-        routeArr = {
-            ["Home", "Blogs"] }
-        /> <
-        BlogDetail / >
-        <
-        /Route> <
-        /Switch>    <
-        /div> { /* </CounterContext.Provider> */ }
+        /> <BlogDetail />
+        </Route> </Switch>    </div> 
 
-        <
-        />
+        </>
     );
 }
 
