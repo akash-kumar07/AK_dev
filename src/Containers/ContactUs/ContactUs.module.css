@@ -1,29 +1,36 @@
 .contactDetails {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactDetails__main {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 60px 180px;
+  max-width: 1030px;
 }
 
-.contactDetails div {
+.contactDetails__main div {
   width: 215px;
   padding: 15px 10px;
   box-shadow: none;
   transition: all 0.3s;
 }
 
-.contactDetails div:hover {
+.contactDetails__main div:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.contactDetails div img {
+.contactDetails__main div img {
   width: 24px;
   display: block;
   margin: auto;
 }
 
-.contactDetails div p {
+.contactDetails__main div p {
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -31,7 +38,7 @@
   font-weight: 600;
 }
 
-.contactDetails div p:last-child {
+.contactDetails__main div p:last-child {
   font-weight: 300;
   font-size: 12px;
   text-transform: none;
@@ -44,7 +51,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px 0 50px 0;
+  padding: 120px 20px 50px 20px;
   position: relative;
 }
 
@@ -187,6 +194,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start !important;
+  flex-wrap: nowrap;
   margin: 20px 0;
 }
 
@@ -206,4 +214,26 @@
 .agreePolicies input[type="checkbox"] {
   margin-right: 5px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .form form div {
+    flex-direction: column;
+  }
+  .form form div div {
+    width: 100%;
+  }
+  .form form div > textarea {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .agreePolicies {
+    flex-direction: row !important;
+  }
+  .form p {
+    text-align: center;
+  }
+  .contactUs > p {
+    text-align: center;
+  }
 }

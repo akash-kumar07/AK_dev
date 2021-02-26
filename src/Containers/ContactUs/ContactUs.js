@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 import * as classes from "./ContactUs.module.css";
@@ -15,38 +15,44 @@ export default function () {
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = (data) => console.log(data);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <NavPlaceholder />
       <RouteBar title="Contact Us" routeArr={["Home", "Contact Us"]} />
       <div className={classes.contactDetails}>
-        <div>
-          <img src={Location} alt="location" />
-          <p>ak international</p>
-          <p>Address Line, Address l ine, Address Line</p>
-        </div>
-        <div>
-          <img src={headset} alt="headset" />
-          <p>let's talk</p>
-          <p>
-            Phone: 1-800-111-222
-            <br />
-            Fax: 1-8000-111-222
-          </p>
-        </div>
-        <div>
-          <img src={mail} alt="mail" />
-          <p>e-mail us</p>
-          <p>
-            info@akinternational.com
-            <br />
-            support@akinternational.com
-          </p>
-        </div>
-        <div>
-          <img src={Info} alt="info" />
-          <p>customer services</p>
-          <p>Lorem ipsum Lorem ipsum dummy text</p>
+        <div className={classes.contactDetails__main}>
+          <div>
+            <img src={Location} alt="location" />
+            <p>ak international</p>
+            <p>Address Line, Address l ine, Address Line</p>
+          </div>
+          <div>
+            <img src={headset} alt="headset" />
+            <p>let's talk</p>
+            <p>
+              Phone: 1-800-111-222
+              <br />
+              Fax: 1-8000-111-222
+            </p>
+          </div>
+          <div>
+            <img src={mail} alt="mail" />
+            <p>e-mail us</p>
+            <p>
+              info@akinternational.com
+              <br />
+              support@akinternational.com
+            </p>
+          </div>
+          <div>
+            <img src={Info} alt="info" />
+            <p>customer services</p>
+            <p>Lorem ipsum Lorem ipsum dummy text</p>
+          </div>
         </div>
       </div>
       <div className={classes.contactUs}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import * as classes from "./Home.module.css";
 import Carousel from "../../Components/Carousel/Carousel";
@@ -16,6 +16,10 @@ import Relixin from "../../Assets/brands/RELIXIN.svg";
 import Skinin from "../../Assets/brands/Skinin.svg";
 
 export default function () {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const cardsData = [
     {
       title: "Our Vision",

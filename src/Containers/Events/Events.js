@@ -25,6 +25,43 @@ const styles = makeStyles((theme) => ({
       boxShadow: "1px 1px 5px rgba(0,0,0,.4)",
     },
   },
+  pagination: {},
+  "@media screen and (max-width: 611px)": {
+    root: {
+      "& ul": {
+        "& li": {
+          "&:not(:last-child)": {
+            margin: "0 20px 0 0",
+          },
+        },
+      },
+    },
+  },
+  "@media screen and (max-width: 490px)": {
+    root: {
+      "& ul": {
+        "& li": {
+          "&:not(:last-child)": {
+            margin: "0 10px 0 0",
+          },
+        },
+      },
+    },
+  },
+  "@media screen and (max-width: 426px)": {
+    root: {
+      "& ul": {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        "& li": {
+          "& button": {
+            margin: 0,
+          },
+        },
+      },
+    },
+  },
 }));
 
 export default function () {
@@ -32,6 +69,10 @@ export default function () {
   const [currentData, setCurrentData] = useState([]);
 
   const count = Math.ceil(data.length / 5);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const start = 5 * (pageNo - 1);
@@ -57,8 +98,15 @@ export default function () {
             <EventCard data={elem} />
           </React.Fragment>
         ))}
-        <div className={styles().root}>
-          <Pagination count={count} onChange={onChange} page={pageNo} />
+        <div className={classes.pagination}>
+          <div className={styles().root}>
+            <Pagination
+              className={styles().pagination}
+              count={count}
+              onChange={onChange}
+              page={pageNo}
+            />
+          </div>
         </div>
       </div>
     </>

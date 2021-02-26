@@ -34,7 +34,7 @@ function App() {
       <Router>
         <div>
           <Navbar scrolled={scrolled} />
-          
+
           <Switch>
             <Route path="/aboutUs"></Route>
             <Route path="/blogs">
