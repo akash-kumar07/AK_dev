@@ -25,10 +25,11 @@ export default function ({data,relatedFlag}) {
         <img  src={cardImg}/>
       </div>
       <div className={style.card_label}>{data.label}</div>
+      <div className={style.card_date}>{"12 FEB 2020"}</div>
       <div className={style.card_title}>{data.title}</div>
       <div className={style.card_bottomLabel}>
       <div >Continue Reading</div>
-      <div className={style.card_border_gradient} style={{width:"48%"}}></div>
+      <div className={style.card_border_gradient}></div>
       </div>
     </Link>
     </>
