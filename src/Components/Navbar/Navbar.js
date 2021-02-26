@@ -51,6 +51,16 @@ export default function ({ scrolled }) {
               </Link>
             </li>
           </ul>
+          <div className={classes.menu}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path>
+            </svg>
+          </div>
         </nav>
       </header>
     </>

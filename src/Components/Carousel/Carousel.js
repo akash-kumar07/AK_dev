@@ -91,21 +91,22 @@ const Carousel = () => {
       </div>
     ));
 
+  const settings = {
+    nextArrow: <Arrow type="next" />,
+    prevArrow: <Arrow type="prev" />,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    // dotClass: classes.button_bar,
+  };
+
   return (
     <>
       <div className={classes.carousel}>
         <div className={classes.carouselMain}>
-          <Slider
-            nextArrow={<Arrow type="next" />}
-            prevArrow={<Arrow type="prev" />}
-            dots={true}
-            slidesToShow={1}
-            slidesToScroll={1}
-            autoplay={true}
-            autoplaySpeed={3000}
-          >
-            {renderSlides()}
-          </Slider>
+          <Slider {...settings}>{renderSlides()}</Slider>
         </div>
       </div>
     </>

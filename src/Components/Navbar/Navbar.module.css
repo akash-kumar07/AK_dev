@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  padding: 14px 180px;
+  padding: 14px 0;
   background: transparent;
   position: fixed;
   top: 0;
@@ -8,6 +8,13 @@
   z-index: 100;
   transition: all 0.3s;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header svg {
+  fill: #fff;
 }
 
 .scrolled {
@@ -16,9 +23,17 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
+.scrolled svg {
+  fill: rgb(19, 19, 19);
+}
+
 .addBackground {
   background: #fff;
   color: rgb(19, 19, 19);
+}
+
+.addBackground svg {
+  fill: rgba(19, 19, 19);
 }
 
 nav {
@@ -26,6 +41,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1030px;
+  padding: 0 20px;
 }
 
 nav img {
@@ -39,7 +56,7 @@ nav ul {
 }
 
 nav ul li:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .link {
@@ -48,4 +65,17 @@ nav ul li:not(:last-child) {
 
 .link:hover {
   color: inherit;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  nav ul {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
 }

@@ -41,6 +41,7 @@
   width: 30%;
   border-radius: 3px;
   background-size: cover !important;
+  margin-bottom: 0;
 }
 
 .arrow {
@@ -68,4 +69,40 @@
 
 .arrow svg {
   fill: #828282;
+}
+
+.button_bar li button {
+  margin-top: 200px;
+  color: #e5e5e5;
+}
+
+.button_bar :global(li.slick-active) button {
+  color: #233297;
+}
+
+@media screen and (max-width: 999px) {
+  .card {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .cardRight {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .cardLeft p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    padding: 50px 0;
+  }
+
+  .cardRight {
+    width: 180px;
+  }
 }

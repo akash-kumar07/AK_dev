@@ -2,13 +2,11 @@
   width: 100%;
   background: #f7f7f7;
 }
-
 .slick-dots li.slick-active button:before {
   color: #233297 !important;
 }
 
 .slick-dots li button:before {
-  margin-top: 70px !important;
   font-size: 10px !important ;
   color: #233297 !important ;
 }

@@ -33,46 +33,51 @@ export default function () {
         "AKI is committed to the highest ethical standards. Our products and services are of the highest quality. Our business practices and processes are designed to achieve quality results that exceed the expectations of patients, physicians, customers, business partners and regulators. Quality is ingrained in the work of our colleagues and all our values. We have a relentless passion for quality in everything we do.",
     },
   ];
-//mm
+
   return (
     <>
       <div className={classes.head}>
         <div className={classes.background}></div>
-        <div className={classes.discover}>
-          <h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>
-          <button>Discover More</button>
-        </div>
-        <div className={classes.image}>
-          <img src={HeadImage} alt="head" />
+        <div className={classes.head__main}>
+          <div className={classes.discover}>
+            <h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h1>
+            <button>Discover More</button>
+          </div>
+          <div className={classes.image}>
+            <img src={HeadImage} alt="head" />
+          </div>
         </div>
       </div>
       <div className={classes.aboutUs}>
-        <h2 className={classes.gradientHeading}>about us</h2>
-        <p>
-          AK International LLC (AKI) is the leading provider of pharmaceutical,
-          aesthetic, skin care products, surgical, medical and beauty equipment
-          in the Middle East and South East Asia. Incorporated in 2005 in Dubai,
-          AKI is one of the fast growing companies in the Middle East.
-        </p>
-        <p>
-          AKI takes great pride in selling, distributing and marketing,
-          pharmaceuticals, pharmaceutical intermediates, medical and aesthetic
-          products, professional skin care products and medical, surgical and
-          beauty equipment of the highest quality to a wide range of health care
-          professionals in the Middle East and South East Asia.
-        </p>
-        <div className={classes.aboutUs_cards}>
-          {cardsData.map((data, index) => (
-            <div key={index} className={classes.card}>
-              <div className={classes.rating}>
-                <span></span>
-                <img src={Rating} alt="rating" />
-                <span></span>
+        <div className={classes.aboutUs__main}>
+          <h2 className={classes.gradientHeading}>about us</h2>
+          <p>
+            AK International LLC (AKI) is the leading provider of
+            pharmaceutical, aesthetic, skin care products, surgical, medical and
+            beauty equipment in the Middle East and South East Asia.
+            Incorporated in 2005 in Dubai, AKI is one of the fast growing
+            companies in the Middle East.
+          </p>
+          <p>
+            AKI takes great pride in selling, distributing and marketing,
+            pharmaceuticals, pharmaceutical intermediates, medical and aesthetic
+            products, professional skin care products and medical, surgical and
+            beauty equipment of the highest quality to a wide range of health
+            care professionals in the Middle East and South East Asia.
+          </p>
+          <div className={classes.aboutUs_cards}>
+            {cardsData.map((data, index) => (
+              <div key={index} className={classes.card}>
+                <div className={classes.rating}>
+                  <span></span>
+                  <img src={Rating} alt="rating" />
+                  <span></span>
+                </div>
+                <h3>{data.title}</h3>
+                <p>{data.desc}</p>
               </div>
-              <h3>{data.title}</h3>
-              <p>{data.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
       <div className={classes.featuredBrands}>
@@ -113,10 +118,12 @@ export default function () {
       </div>
 
       <div className={classes.stories}>
-        <h2 className={classes.gradientHeading}>our stories</h2>
-        <div className={classes.carousel}>
-          <div className={classes.box}></div>
-          <Carousel />
+        <div>
+          <h2 className={classes.gradientHeading}>our stories</h2>
+          <div className={classes.carousel}>
+            <div className={classes.box}></div>
+            <Carousel />
+          </div>
         </div>
       </div>
     </>
