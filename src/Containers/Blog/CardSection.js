@@ -42,8 +42,10 @@ function CardSection(props) {
   return (
     <div className={style.blog_cardSection_Main}>
       <div className={style.blog_cardSection}>
-        {currentData.map((data) => (
-          <BlogCard data={data} />
+        {currentData.map((data, index) => (
+          <React.Fragment key={index}>
+            <BlogCard data={data} />
+          </React.Fragment>
         ))}
       </div>
       <div className={styles().root}>
