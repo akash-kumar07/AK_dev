@@ -358,5 +358,84 @@ background: #ECEEF6 0% 0% no-repeat padding-box;;
 display: flex;
 justify-content: space-around;
 }
+.cardDetail_relatedBlogs>div{
+margin: 14px 0px;
+    }
 /* end of realted block */
 
+
+/* resnosive  */
+@media only screen and (max-width: 600px){
+    .cardDetail_main{
+        width: 100%;
+    }
+    .cardDetail_relatedBlogs{
+       width: 90%;
+       flex-direction: column;
+       justify-content: space-evenly;
+    }
+    .cardDetail_writerblock_social_icons>div{
+      margin: 14px 0px;
+     }
+    .cardDetail_topic{
+        padding: 0%;
+    }
+    .blog_card{
+        width: 100%;
+        margin: 16px 0px;
+    }
+    .cardDetail_writerblock{
+        position: relative;
+        min-height: 218px;
+    }
+    .cardDetail_writerblock>div:nth-child(1){
+        position: relative;
+       
+       
+    }
+
+    .cardDetail_writerblock>div:nth-child(1)>div:nth-child(2){
+        position: absolute;
+        top: 51px;
+        left: 87px;
+        width: max-content;
+       
+    }
+    .cardDetail_writerblock>div:nth-child(2)>div:nth-child(3){
+        position: absolute;
+    top: 43%;
+    left: 0px;
+
+    }
+   
+    .cardDetail_writerblock>div:nth-child(2)>div:nth-child(4){
+        position: absolute;
+    top: 80%;
+    left: 0%;
+justify-content: unset;
+    }
+    .cardDetail_writerblock>div:nth-child(2)>div:nth-child(4)>div{
+       width: 15%;
+    }
+
+    .cardDetail_bg{
+        width: 100%;
+      height: 166px;
+      max-height: 166px;
+      background-image:url(../../Assets/Group\ 3685.png) ;
+      background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+     /* text-align: center; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .blog_cardSection_Main{
+        width: 53%;
+        padding: 1% 4%;
+    }
+}
+
+
+/* end of responsive */

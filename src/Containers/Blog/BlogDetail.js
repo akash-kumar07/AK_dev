@@ -7,6 +7,7 @@ import l from "../../Assets/social/Group3689.svg";
 import data from "./blogsData.json";
 import BlogCard from './BlogCard';
 import pic from '../../Assets/Ellipse 6/Ellipse 6.png'
+// import bgpic from ''
 import {
     BrowserRouter as Router,
     Switch,
@@ -30,11 +31,13 @@ function BlogDetail() {
     })
     setBlogDeatil(a[0])
    },[])
-
+console.log('blogdetail',blogDetail)
     return (
         <>
             <div className={style.cardDetail} >
+
               <div className={style.cardDetail_bg}>
+                 
                  {blogDetail?.label}
               </div>
               <div className={style.cardDetail_main}>
