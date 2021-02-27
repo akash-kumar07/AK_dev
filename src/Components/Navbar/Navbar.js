@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import * as classes from "./Navbar.module.css";
 import Logo from "../../Assets/logo.png";
 
-export default function ({ scrolled }) {
+export default function ({ scrolled, toggleSidebar }) {
   const current = useLocation().pathname === "/";
 
   return (
@@ -51,7 +51,7 @@ export default function ({ scrolled }) {
               </Link>
             </li>
           </ul>
-          <div className={classes.menu}>
+          <div className={classes.menu} onClick={toggleSidebar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"

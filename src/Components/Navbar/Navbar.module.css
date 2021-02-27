@@ -15,6 +15,13 @@
 
 header svg {
   fill: #fff;
+  border-radius: 3px;
+  transition: all 0.3;
+  cursor: pointer;
+}
+
+header svg:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .scrolled {

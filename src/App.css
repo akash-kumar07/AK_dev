@@ -10,3 +10,9 @@
   font-size: 10px !important ;
   color: #233297 !important ;
 }
+
+@media screen and (min-width: 654px) {
+  .sidebar {
+    display: none;
+  }
+}

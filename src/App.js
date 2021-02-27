@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 
 import Navbar from "./Components/Navbar/Navbar";
+import Sidebar from "./Components/Sidebar/Sidebar";
 import Home from "./Containers/Home/Home";
 import Blogs from "./Containers/Blog/index";
 import Events from "./Containers/Events/Events";
@@ -14,6 +15,7 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   const listenScrollEvent = (event) => {
     if (window.scrollY < 71) {
@@ -21,6 +23,10 @@ function App() {
     } else if (window.scrollY > 70) {
       return setScrolled(false);
     }
+  };
+
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
   };
 
   useEffect(() => {
@@ -33,8 +39,10 @@ function App() {
     <>
       <Router>
         <div>
-          <Navbar scrolled={scrolled} />
-
+          <Navbar scrolled={scrolled} toggleSidebar={toggleSidebar} />
+          <div className="sidebar">
+            <Sidebar toggleSidebar={toggleSidebar} sidebar={showSidebar} />
+          </div>
           <Switch>
             <Route path="/aboutUs"></Route>
             <Route path="/blogs">

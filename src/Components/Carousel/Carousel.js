@@ -99,7 +99,6 @@ const Carousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // dotClass: classes.button_bar,
   };
 
   return (
