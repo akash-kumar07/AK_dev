@@ -125,7 +125,10 @@ footer {
 
 @media screen and (max-width: 625px) {
   footer {
-    padding-top: 400px;
+    padding-top: 250px;
+  }
+  .background::after {
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 83%);
   }
   .row {
     flex-direction: column;
@@ -150,7 +153,6 @@ footer {
 
 @media screen and (max-width: 400px) {
   footer {
-    padding-top: 400px;
     overflow: hidden;
   }
   .left {
