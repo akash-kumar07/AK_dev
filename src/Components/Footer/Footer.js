@@ -21,14 +21,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className={classes.link} to="/products">
+                <Link className={classes.link} to="/">
                   Products
                 </Link>
               </li>
             </ul>
             <ul>
               <li>
-                <Link className={classes.link} to="/blogs">
+                <Link className={classes.link} to="/">
                   Blogs
                 </Link>
               </li>

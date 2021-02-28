@@ -44,14 +44,14 @@ function App() {
             <Sidebar toggleSidebar={toggleSidebar} sidebar={showSidebar} />
           </div>
           <Switch>
-            <Route path="/"></Route>
-            <Route path="/">
+            <Route path="/aboutUs"></Route>
+            <Route path="/blogs">
               <Blogs />
             </Route>
             <Route path="/events">
               <Events />
             </Route>
-            <Route path="/"></Route>
+            <Route path="/media"></Route>
             <Route path="/contactUs">
               <ContactUs />
             </Route>

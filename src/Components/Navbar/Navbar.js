@@ -31,7 +31,7 @@ export default function ({ scrolled, toggleSidebar }) {
               </Link>
             </li>
             <li>
-              <Link className={classes.link} to="/aboutUs">
+              <Link className={classes.link} to="/">
                 about us
               </Link>
             </li>
@@ -41,7 +41,7 @@ export default function ({ scrolled, toggleSidebar }) {
               </Link>
             </li>
             <li>
-              <Link className={classes.link} to="/media">
+              <Link className={classes.link} to="/">
                 media
               </Link>
             </li>
