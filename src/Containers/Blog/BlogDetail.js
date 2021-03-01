@@ -38,7 +38,7 @@ console.log('blogdetail',blogDetail)
 
               <div className={style.cardDetail_bg}>
                  
-                 {blogDetail?.label}
+                 <h1>{blogDetail?.label}</h1>
               </div>
               <div className={style.cardDetail_main}>
                 <div className={style.cardDetail_topic}>
@@ -89,10 +89,42 @@ console.log('blogdetail',blogDetail)
                        </div>
                    </div>
                 </div>
-
-              </div>
+            
            {/* end of writer block */}
+
+           {/* start of res writer block */}
+           <div className={style.cardDetail_writerblockres}>
+                   <div >
+                      <div className={style.cardDetail_writer_pic}>
+                          <img src={pic}/>
+                      </div>
+                   </div>
+                   <div >
+                       <div>{blogDetail?.writer?.name}</div>
+                       <div>{blogDetail?.writer?.designation}</div>
+                       <div className={style.cardDetail_no_of_post}>
+                          14 posts
+                      </div>
+                      
+                   </div>
+                   <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. invidunt ut labore et.</div>
+                   <div className={style.cardDetail_writerblock_social_icons}>
+                         <div>
+                            <img  src={f} alt="Eikonha" />
+                         </div>
+                         <div >
+                            <img src={l} alt="Eikonha" />
+                         </div>
+                         <div >
+                            <img src={t} alt="Eikonha" />
+                         </div>
+                       </div>
+                </div>
+
+            
+              {/* end of writer block */}
            {/* start of related block */}
+           </div>
              {blogDetail?.relatedBlogs &&<div className={style.cardDetail_relatedBlogs_section}>
                     <div>Related Posts</div>
                     <div  className={style.cardDetail_relatedBlogs}>
