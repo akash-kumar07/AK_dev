@@ -28,31 +28,34 @@ export default function () {
           <div>
             <img src={Location} alt="location" />
             <p>ak international</p>
-            <p>Address Line, Address l ine, Address Line</p>
+            <p>
+              {" "}
+              Unit no.2205, 22nd Floor, Iris Bay Tower, Business Bay, Dubai, UAE
+            </p>
           </div>
           <div>
             <img src={headset} alt="headset" />
             <p>let's talk</p>
             <p>
-              Phone: 1-800-111-222
-              <br />
-              Fax: 1-8000-111-222
+              Phone: +97143544552
+              {/* <br />
+              Fax: 1-8000-111-222 */}
             </p>
           </div>
           <div>
             <img src={mail} alt="mail" />
             <p>e-mail us</p>
             <p>
-              info@akinternational.com
-              <br />
-              support@akinternational.com
+              info@akiuae.com
+              {/* <br />
+              support@akinternational.com */}
             </p>
           </div>
-          <div>
+          {/* <div>
             <img src={Info} alt="info" />
             <p>customer services</p>
             <p>Lorem ipsum Lorem ipsum dummy text</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={classes.contactUs}>

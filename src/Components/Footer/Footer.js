@@ -54,7 +54,7 @@ const Footer = () => {
             </p>
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/akiuae">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -66,7 +66,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/akiuae/?igshid=zvs4khv7mc0r">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -80,7 +80,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href=" https://www.linkedin.com/company/ak-international-llc/mycompany/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
